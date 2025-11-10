@@ -1,0 +1,195 @@
+/* 기본 설정 */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Noto Sans KR', sans-serif;
+color: white;
+position: relative;
+background: url('https://jsnmos.github.io/oktarnd.github.io/img/main01.png') center/cover fixed no-repeat;
+}
+
+.wrap {
+position: relative;
+width: 100%; 
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+/* 헤더 */
+.header {
+display: flex;
+align-items: center;
+height: 100px;
+padding: 0 40px;
+background: rgba(0, 0, 0, 0.4);
+}
+
+.logo01 {
+display: flex;
+align-items: center;
+height:100%;
+}
+
+.logo02 {
+padding-left: 20px;
+font-size: 1.4rem;
+font-weight: 500;
+}
+
+.inner-con {
+max-width: 1180px;
+margin: 0 auto;
+width: 100%;
+}
+
+.content {
+display: flex;min-height: 650px;
+}
+
+.left {
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 50%;
+}
+.left img {transition: all 0.3s;width:100%}
+.left img:hover {
+transform: translate(5px, -5px);
+}
+
+.txt01{font-size: 2.5rem;font-weight: 400;}
+.txt02{font-size: 2.7rem;font-weight: 500;padding-bottom:20px}
+
+.right {
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+width: 50%;
+}
+
+/* 버튼 스타일 */
+.btn {
+background-color: #d138008a;
+color: #fff;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1.2rem;
+transition: all 0.3s;
+width: 60%;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration-line: none;
+font-weight: 500;
+}
+
+.btn.spe {
+background-color: #d13800c7;
+color:#fff;
+}
+.btn.blue {
+background-color: #6a1affb5;
+width: 100%;
+color: #fff;
+}
+
+.btn:hover {
+background-color: #ffffffcc;
+color: #333;
+transform: translateX(5px);
+}
+
+.item {
+display: flex;
+justify-content: space-between;
+max-width: 1180px;
+margin: 0 auto;
+position: relative;
+}
+
+.item-left {
+width: 850px;
+}
+
+.item-right {
+width: 300px;
+margin-left: 30px;
+position: absolute; /* JS에서 위치를 직접 제어할 거야 */
+top: 0;
+right: 0;
+background: rgba(0,0,0,0.5);
+border-radius: 10px;
+padding: 20px;
+transition: top 0.1s ease-out;
+
+}
+
+
+.t-left{display: inline-block;text-align: left;}
+.t-right{display: inline-block;text-align: right;}
+
+.con-txt01{font-size: 2rem;font-weight: 500;padding: 20px;}
+.con-txt02{font-size: 1.2rem;font-weight: 400;padding: 10px 20px;}
+
+.item-txt01{font-size: 2rem;font-weight: 500;padding-bottom: 30px;}
+.item-txt02{font-size: 1.2rem;display: flex;justify-content: space-between;padding-bottom: 15px;font-weight: 500;}
+
+/* 푸터 */
+.footer {
+height: 80px;
+background: rgba(0, 0, 0, 0.4);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 0.9rem;
+flex-direction: column;
+color: #bbb;
+padding: 20px;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+.header {
+padding: 15px 20px;
+}
+.logo01 img{height: 30px;object-fit: cover;}
+.logo02 {
+font-size: 1rem;
+}
+.content {
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 10%;
+}
+
+.con img {width: 100%;}
+.left {
+align-items: flex-end;}
+.right {
+align-items: center;
+width: 100%;
+gap: 15px;
+justify-content: flex-start;
+}
+.right a {
+width: 80%;
+height: 50px;
+font-size: 1rem;
+}
+.footer {
+height: 140px;
+}
+}
