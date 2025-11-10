@@ -9,7 +9,7 @@ body {
 font-family: 'Noto Sans KR', sans-serif;
 color: white;
 position: relative;
-background: url('https://jsnmos.github.io/oktarnd.github.io/img/main01.png') center/cover fixed no-repeat;
+background: url('https://oktarnd.kr/img/main01.png') center/cover fixed no-repeat;
 }
 
 .wrap {
@@ -126,7 +126,7 @@ width: 850px;
 .item-right {
 width: 300px;
 margin-left: 30px;
-position: absolute; /* JS에서 위치를 직접 제어할 거야 */
+position: absolute; 
 top: 0;
 right: 0;
 background: rgba(0,0,0,0.5);
@@ -192,4 +192,5 @@ font-size: 1rem;
 .footer {
 height: 140px;
 }
+
 }
