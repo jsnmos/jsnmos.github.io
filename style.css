@@ -208,7 +208,7 @@ background: none;
 
 
 .content {
-background: url('https://oktarnd.kr/img/main01.png') center/cover fixed no-repeat;
+background: url('https://oktarnd.kr/img/main01.png') center/cover no-repeat;
 flex-direction: column;
 align-items: center;
 text-align: center;
@@ -273,3 +273,4 @@ height: 140px;
 background: rgba(0, 0, 0, 0.9);
 }
 }
+
