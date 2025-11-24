@@ -191,7 +191,7 @@ padding: 20px;
 
 
 /* 반응형 */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 .header {
 padding: 15px 20px;
 position: absolute;
@@ -273,4 +273,3 @@ height: 140px;
 background: rgba(0, 0, 0, 0.9);
 }
 }
-
