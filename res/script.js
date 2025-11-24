@@ -45,9 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
       window.open(
         "https://oktarnd.kr/popup.html",
         "estimatePopup",
-        "width=500,height=700,top=100,left=100"
+        "width=700,height=900,top=100,left=100"
       );
     });
   });
 
 });
+
