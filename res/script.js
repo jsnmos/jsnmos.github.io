@@ -33,16 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
 document.addEventListener("DOMContentLoaded", () => {
 
   // --- 팝업 열기 기능 ---
   const popupButtons = document.querySelectorAll(".openPopup");
-  // 팝업 창 옵션
-  const width = 700;
-  const height = 900;
-  const left = (window.screen.width / 2) - (width / 2);
-  const top = (window.screen.height / 2) - (height / 2);
 
   popupButtons.forEach(btn => {
     btn.addEventListener("click", function(e) {
@@ -51,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       window.open(
         "https://oktarnd.kr/popup.html",
         "estimatePopup",
-        "width=${width},height=${height},top=${top},left=${left}"
+        "width=500,height=700,top=100,left=100"
       );
     });
   });
