@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="OKTA RnD | K-Fire Hunters">
+	<meta property="og:image" content="https://oktarnd.kr/img/head02.png">
+    <title>OKTA RnD | K-Fire Hunters</title>
+    <link rel="stylesheet" href="https://oktarnd.kr/res/style.css">
+    <script src="https://oktarnd.kr/res/script.js" defer></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+    (function(){
+        emailjs.init('FMS-nexppzBEa8dEo'); 
+    })();
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header">
+                <div class="logo01"><img src="https://oktarnd.kr/img/logo03.png"></div>
+                <p class="logo02">|&nbsp;&nbsp;&nbsp;&nbsp;K-Fire Hunters</p>
+            </div>
+        </header>
+        <div class="inner-con">
+            <div class="content">
+                <div class="left">
+                    <p class="txt01">열화상 감지장치</p>
+                    <p class="txt02">K-Fire Hunters</p>
+                    <img src="https://oktarnd.kr/img/fire03.png">
+                </div>
+                <div class="right">
+                    <a class="btn spe openPopup" href="https://oktarnd.kr/popup.html">견적 문의하기</a>
+                    <a class="btn" href="https://www.jj.ac.kr/oktarnd/intro/helmat.do" target="_blank">K-Fire Hunters</a>
+                    <a class="btn" href="https://www.jj.ac.kr/oktarnd/intro/wildfires.do" target="_blank">Wildfires</a>
+                    <a class="btn" href="https://www.jj.ac.kr/oktarnd/index.do" target="_blank">OKTA RnD</a>
+                </div>
+            </div>
+            <hr style="margin-bottom: 20px;">
+            <div class="item">
+                <div class="item-left">
+                    <div class="con">
+                        <p class="con-txt01">📌 헬멧 부착형 열화상 카메라가 왜 필요한가?</p>
+                        <img src="https://oktarnd.kr/img/con01.png">
+                        <p class="con-txt01">📌 주요 기능</p>
+                        <p class="con-txt02">1. 온도 자동경고 기능: 가연성 가스, 남은 불씨 감지 자동경고</p>
+                        <p class="con-txt02">2. 연무 속 요구조자 확인 가능: 구조시간 단축</p>
+                        <p class="con-txt02">3. 통합관제: 실시간 통신 지원으로 통합 진화대원 위치 관리 및 산불상황전송 통합관리 가능</p>
+                        <p class="con-txt02">4. 핸즈프리 기능: 헬멧 장착형으로 화재관리 작업 용이</p>
+                    </div>
+                    <div class="con">
+                        <p class="con-txt01">📌 열화상 카메라를 이용한 잔불 진화 작업시 변화</p>
+                        <img src="https://oktarnd.kr/img/con02.png">
+                    </div>
+                    <div class="con">
+                        <p class="con-txt01">📌 잔불 진화 작업 현장</p>
+                        <p class="con-txt02">There is no equipment to detect remaining fire.</p>
+                        <p class="con-txt02">-> It's hard, time consuming, and can spread again</p>
+                        <img src="https://oktarnd.kr/img/con03.png">
+                    </div>
+                    <div class="con">
+                        <p class="con-txt01">📌 산불 재발화로 인한 뉴스</p>
+                        <img src="https://oktarnd.kr/img/con04.png">
+                    </div>
+                    <div class="con">
+                        <p class="con-txt01">🔥 K-Fire Hunters 🔥</p>
+                        <p class="con-txt02">✔ 통합관제실 현장 실시간 산불 상황 전송</p>
+                        <p class="con-txt02">✔ 잔불,온도 실시간 현장 확인</p>
+                        <img src="https://oktarnd.kr/img/con05.png" style="border-radius: 10px;">
+                    </div>
+                    <div class="spec-table">
+                        <p class="con-txt01">📌 Specification</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>RAM+ROM</th>
+                                    <td>4+64GB</td>
+                                    <th>Frequencies</th>
+                                    <td>3G: WCDMA B1/B2/B5/B8<br>4G: TDD-LTE B34/B38/B39/B40/B41</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Extend Memory</th>
+                                    <td>Up to 256GB</td>
+                                    <th>WIFI</th>
+                                    <td>WIFI 2.4G/5G, Support 802.11 a/b/g/n/ac</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Card Slot</th>
+                                    <td>micro TF card ×1<br>Nano SIM×1</td>
+                                    <th>Bluetooth</th>
+                                    <td>BT 5.0</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Screen</th>
+                                    <td>3 inches</td>
+                                    <th>Navigation</th>
+                                    <td>GPS/Beidou</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Battery</th>
+                                    <td>3600mAh</td>
+                                    <th>USB Type-C</th>
+                                    <td>Charging, download etc</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Dimension</th>
+                                    <td>229.4×215.8×31.4mm</td>
+                                    <th>Speaker</th>
+                                    <td>Support 2W</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Weight</th>
+                                    <td>≈360g</td>
+                                    <th>Sensors</th>
+                                    <td>Gravity Sensor, Gyroscope, Light Sensor</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Camera</th>
+                                    <td colspan="3">Used for thermal imaging detection, the large screen can display imaging and detection temperature</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Temperature measurement range</th>
+                                    <td>-20~150℃ (High image)<br>50~550℃ (Wide range)</td>
+                                    <th>Flashlight</th>
+                                    <td>1W</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Measuring distance</th>
+                                    <td>20~40m</td>
+                                    <th>Microphone</th>
+                                    <td>Dual mics (1 main mic, 1 sub mic)</td>
+                                </tr>
+
+                                <tr>
+                                    <th>IP level</th>
+                                    <td>IP66</td>
+                                    <th>Standby time</th>
+                                    <td>≥16 hours</td>
+                                </tr>
+
+                                <tr>
+                                    <th>The way to wear</th>
+                                    <td>Helmet mounted</td>
+                                    <th>OS</th>
+                                    <td>Android 12 or above</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="con">
+                        <p class="con-txt01">📌 잔불 재발화 과정</p>
+                        <img src="https://oktarnd.kr/img/con06.png">
+                    </div>
+                    <div class="con">
+                        <p class="con-txt01">📌 다양한 분야 활용</p>
+                        <p class="con-txt02">전력, 제련, 석유화학, 기계, 석탄, 운송, 화재예방, 국방 및 기타산업에서	열화상	카메라	기술은<br class="br-mh">현장 인력들이 잠재적인 열 관련 문제들을 감지하고 고장 및 사고를 예방하는데 도움을 주기위해<br class="br-mh">널리 사용됩니다.</p>
+                        <img src="https://oktarnd.kr/img/con10.png">
+                    </div>
+                    <div class="con">
+                        <p class="con-txt01">📌 "화재 & 안전" 헬멧 장착 활용</p>
+                        <img src="https://oktarnd.kr/img/con08.png" style="border-radius: 10px;">
+                    </div>
+                    <div class="con">
+                        <p class="con-txt01">📌 안전모 장착 활용</p>
+                        <img src="https://oktarnd.kr/img/con09.png" style="border-radius: 10px;">
+                    </div>
+                </div>
+                <div class="item-right">
+                    <p class="item-txt01">열화상 감지장치<br>K-Fire Hunters</p>
+                    <div class="item-txt02">
+                        <p class="t-left">주문금액</p>
+                        <p class="t-right">가격협의</p>
+                    </div>
+                    <a class="btn blue openPopup" href="https://oktarnd.kr/popup.html">견적 문의하기</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>Tel: ☎ +82 63-220-2233&nbsp;&nbsp;|&nbsp;&nbsp;Address: 전북특별자치도 전주시 완산구 천잠로 303 전주대학교 공학1관 214호 / #214, Engineering Bdlg 1, 303, Cheonjam-ro, 
+    Wansan-gu, Jeonju-si, Jeonbuk-do, Republic of Korea</p>
+                <p>Copyrights (C)2025 OKTA RnD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+
