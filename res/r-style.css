@@ -48,7 +48,7 @@ width: 100%;
 }
 
 .content {
-background: url('https://oktarnd.kr/img/robot/r-main05.png') center/cover no-repeat;
+background: url('https://oktarnd.kr/img/robot/r-main06.png') center/cover no-repeat;
 display: flex;min-height: 650px;width: 100%;
 padding: 170px 10% 5% 10%;
 }
@@ -266,4 +266,5 @@ font-size: 1rem;
 height: 140px;
 background: rgba(0, 0, 0, 0.9);
 }
+
 }
