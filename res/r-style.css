@@ -178,7 +178,8 @@ padding: 20px;
 
 /* 테이블 */
 .spec-table {
-    max-width: 88%;
+    max-width: 100%;
+    padding: 2%;
 }
 
 .spec-table table {
