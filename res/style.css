@@ -12,6 +12,10 @@ position: relative;
 background: url('https://oktarnd.kr/img/main01.png') center/cover fixed no-repeat;
 }
 
+a {color: #fff;
+border: none;
+text-decoration-line: none;}
+
 .wrap {
 position: relative;
 width: 100%; 
@@ -27,6 +31,7 @@ align-items: center;
 height: 100px;
 padding: 0 40px;
 background: rgba(0, 0, 0, 0.4);
+gap: 10%;
 }
 
 .logo01 {
@@ -35,10 +40,22 @@ align-items: center;
 height:100%;
 }
 
-.logo02 {
-padding-left: 20px;
-font-size: 1.4rem;
-font-weight: 500;
+.menu01 {
+ display: flex;
+ height:100%;
+ gap: 7%;
+ width: 100%;
+align-items: center;
+}
+.menu01 a {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.menu01 a:first-child {
+    color: #ff5d23;
+}
+.menu01 a:hover {
+    color: #ff6f3a;
 }
 
 .inner-con {
@@ -80,8 +97,6 @@ width: 50%;
 /* 버튼 스타일 */
 .btn {
 background-color: #d138008a;
-color: #fff;
-border: none;
 border-radius: 8px;
 cursor: pointer;
 font-size: 1.2rem;
@@ -91,7 +106,6 @@ height: 60px;
 display: flex;
 align-items: center;
 justify-content: center;
-text-decoration-line: none;
 font-weight: 500;
 }
 
@@ -198,9 +212,7 @@ position: absolute;
 width: 100%;
 }
 .logo01 img{height: 30px;object-fit: cover;}
-.logo02 {
-font-size: 1rem;
-}
+.menu01 {display: none;}
 
 body {
 background: none;
