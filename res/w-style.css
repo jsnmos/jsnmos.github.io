@@ -158,7 +158,7 @@ transition: top 0.1s ease-out;
 .con-txt03{color: #333;font-size: 1.2rem;font-weight: 400;padding: 10px 30px;}
     
 
-.item-txt01{font-size: 1.7rem;font-weight: 500;padding-bottom: 30px;}
+.item-txt01{font-size: 1.6rem;font-weight: 500;padding-bottom: 30px;}
 .item-txt02{font-size: 1.2rem;display: flex;justify-content: space-between;padding-bottom: 15px;font-weight: 500;}
 
 .con {margin-bottom: 20px;border: 1px solid #ddd;border-radius: 20px;word-break: keep-all;}
