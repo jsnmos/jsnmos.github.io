@@ -153,7 +153,7 @@ transition: top 0.1s ease-out;
 .t-left{display: inline-block;text-align: left;}
 .t-right{display: inline-block;text-align: right;}
 
-.con-txt01{color: #fff;font-size: 1.6rem;font-weight: 500;padding: 10px 20px;background-color: #c74b1dd5;border-radius: 15px;}
+.con-txt01{color: #fff;font-size: 1.6rem;font-weight: 500;padding: 10px 20px;background-color: #133583de;border-radius: 15px;}
 .con-txt02{color: #133583f3;font-size: 1.5rem;font-weight: 600;padding: 20px 0 5px 20px;}
 .con-txt03{color: #333;font-size: 1.2rem;font-weight: 400;padding: 10px 30px;}
     
