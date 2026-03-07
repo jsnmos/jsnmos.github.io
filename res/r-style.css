@@ -37,13 +37,13 @@ gap: 10%;
 display: flex;
 align-items: center;
 height:100%;
-width:30%;
+width:45%;
 }
 .menu01 {
  display: flex;
  height:100%;
  gap: 7%;
- width: 70%;
+ width: 100%;
 align-items: center;
 }
 .menu01 a {
@@ -283,4 +283,5 @@ height: 140px;
 background: rgba(0, 0, 0, 0.9);
 }
 }
+
 
