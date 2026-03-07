@@ -31,13 +31,13 @@ align-items: center;
 height: 100px;
 padding: 0 40px;
 background: rgba(0, 0, 0, 0.4);
-gap: 10%;
 }
 
 .logo01 {
 display: flex;
 align-items: center;
 height:100%;
+width:45%;
 }
 
 .menu01 {
@@ -211,6 +211,9 @@ padding: 15px 20px;
 position: absolute;
 width: 100%;
 }
+.logo01 {
+width:100%;
+}
 .logo01 img{height: 30px;object-fit: cover;}
 .menu01 {display: none;}
 
@@ -285,3 +288,4 @@ height: 140px;
 background: rgba(0, 0, 0, 0.9);
 }
 }
+
