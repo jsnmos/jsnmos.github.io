@@ -19,8 +19,10 @@ body{
   flex-direction:column;
 }
 
+
 /* ===== 헤더 다크 패널 ===== */
 .header{
+  position: relative;
   padding:48px 40px 28px;
   text-align:center;
   background:linear-gradient(#151922, #10131a);
@@ -38,6 +40,13 @@ body{
   color:#9ca3af;
   font-size:14px;
 }
+/* 로고 */
+.logo{
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 /* ===== 전시 영역 ===== */
 .showcase{
@@ -54,7 +63,7 @@ body{
   overflow:hidden;
   border-radius:12px;
 
-  background:linear-gradient(145deg, #f3f4f6, #e5e7eb);
+  background:linear-gradient(145deg, #a1acbb, #3e4352);
 
   text-decoration:none;
   color:#111;
@@ -142,14 +151,19 @@ body{
 /* ===== 모바일 ===== */
 @media (max-width: 768px){
 
+    /* 로고 */
+  .logo{
+    position: relative;
+    left: 0;
+  }
   .showcase{
-    grid-template-columns: 1fr;   /* ✅ 1열 세로 정렬 */
+    grid-template-columns: 1fr; 
     gap:16px;
     padding:20px;
   }
 
   .panel{
-    min-height:320px;            /* 모바일 높이 살짝 축소 */
+    min-height:320px;    
   }
 
   .overlay{
