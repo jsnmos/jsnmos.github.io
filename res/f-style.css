@@ -211,7 +211,7 @@ padding: 20px;
 padding: 15px 20px;
 }
 
-.logo01 {width: 45%;}
+.logo01 {width: 100%;}
 .logo01 img{height: 30px;object-fit: cover;}
 
 .menu01 {display: none;}
