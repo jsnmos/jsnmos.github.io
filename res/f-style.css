@@ -236,6 +236,7 @@ padding: 135px 10% 10% 10%;
 .left {
 align-items: center;
 width: 100%;}
+.left img {width: 60%;}
 .right {
 align-items: center;
 width: 100%;
