@@ -23,8 +23,15 @@
   </url>
 
   <url>
-    <loc>https://oktarnd.kr/drones</loc>
-    <lastmod>2025-12-15</lastmod>
+    <loc>https://oktarnd.kr/fabric</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://oktarnd.kr/liquid</loc>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
