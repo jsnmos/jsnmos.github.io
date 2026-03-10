@@ -148,6 +148,14 @@ body{
   border-top:1px solid rgba(255,255,255,0.06);
 }
 
+@media (max-width:1024px){
+  .showcase{
+    grid-template-columns: repeat(2, 1fr);
+    gap:16px;
+    padding:20px;
+  }
+}
+
 /* ===== 모바일 ===== */
 @media (max-width: 768px){
 
@@ -158,8 +166,6 @@ body{
   }
   .showcase{
     grid-template-columns: 1fr; 
-    gap:16px;
-    padding:20px;
   }
 
   .panel{
