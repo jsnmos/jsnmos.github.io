@@ -47,9 +47,9 @@
     </a>
 
     <a href="https://oktarnd.kr/wildfires" class="panel" target="_blank">
-      <img src="https://oktarnd.kr/img/wildfires/wildfires02.png" alt="산불 방지 수막설비">
+      <img src="https://oktarnd.kr/img/wildfires/wildfires02.png" alt="산불 및 국가유산 보호시스템">
       <div class="overlay">
-        <h2>광역 산불 방지 수막설비</h2>
+        <h2>산불 및 국가유산 보호시스템</h2>
         <p>대형 화재 확산 지연</p>
       </div>
     </a>
@@ -78,22 +78,39 @@
 
 </div>
 	
-	<!-- 이미지 팝업 -->
-    <div id="imagePopup" class="popup-overlay" role="dialog" aria-modal="true">
-    <div class="popup-image-box">
+<!-- 이미지 팝업 -->
+<div class="popup-layer" role="dialog" aria-modal="true" aria-label="공지 팝업">
+  <div class="popup-layer__inner">
+    <div class="popup-grid">
 
-    <!-- 상단 버튼 영역 -->
-    <div class="popup-top-buttons">
-        <button type="button" id="hideTodayBtn">오늘 하루 보지 않기</button>
-        <button type="button" id="closePopupBtn">닫기 ✕</button>
+      <!-- 팝업 1 -->
+      <article class="popup-card">
+        <div class="popup-card__actions">
+          <button type="button" class="popup-btn popup-btn--today">오늘 하루 보지 않기</button>
+          <button type="button" class="popup-btn popup-btn--close" aria-label="팝업 닫기">닫기 ✕</button>
+        </div>
+
+        <a href="https://oktarnd.kr/mobility" target="_blank" class="popup-card__link">
+          <img src="https://oktarnd.kr/img/popup_260325.png" alt="팝업 이미지" class="popup-card__image">
+        </a>
+      </article>
+
+      <!-- 팝업 2 -->
+      <article class="popup-card">
+        <div class="popup-card__actions">
+          <button type="button" class="popup-btn popup-btn--today">오늘 하루 보지 않기</button>
+          <button type="button" class="popup-btn popup-btn--close" aria-label="팝업 닫기">닫기 ✕</button>
+        </div>
+
+        <a href="https://oktarnd.kr/wildfires" target="_blank" class="popup-card__link">
+          <img src="https://oktarnd.kr/img/popup_260326.png" alt="팝업 이미지" class="popup-card__image">
+        </a>
+      </article>
+
     </div>
-
-    <!-- 이미지 링크 -->
-    <a href="https://oktarnd.kr/mobility" target="_blank" class="popup-image-link">
-        <img src="/img/popup_260320.png" alt="공지 팝업 이미지">
-    </a>
-		</div>
-	</div>
+  </div>
+</div>
+	
 </body>
 
 </html>
