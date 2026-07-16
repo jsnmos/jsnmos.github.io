@@ -84,7 +84,7 @@ a:focus-visible { outline: 3px solid #ffb56f; outline-offset: 3px; }
   .brand img { width: 104px; }
   .contact-link { padding: 10px 14px; font-size: .8rem; }
   .hero { display: block; min-height: auto; padding-top: 64px; padding-bottom: 70px; background: #fff; }
-  .hero h1 { font-size: clamp(2.9rem, 14vw, 4.5rem); }
+  .hero h1 { font-size: clamp(2.5rem, 12vw, 3.8rem); }
   .hero-visual { position: absolute; right: -90px; bottom: -90px; width: 260px; opacity: .18; }
   .solutions { padding-top: 56px; }
   .section-heading { display: block; }
