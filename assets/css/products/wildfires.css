@@ -12,6 +12,10 @@
   --product-side-title-size: 1.35rem;
 }
 
+body .left .txt02 {
+  font-size: clamp(2.5rem, 4.5vw, 3.8rem);
+}
+
 @media (max-width: 1024px) {
   .left { justify-content: initial; }
 }
