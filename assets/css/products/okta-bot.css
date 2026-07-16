@@ -16,10 +16,10 @@ body { color: #242424; background: #fffaf6; }
 .logo01 { color: #3b2418; }
 .menu01 { gap: 3%; }
 .menu01 a { color: #4b2a1a; font-size: 1rem; white-space: nowrap; }
-.bot-hero { color: #3b2418; position: relative; overflow: hidden; }
+.bot-hero { color: #3b2418; position: relative; overflow: hidden; padding-right: 0; padding-left: 0; }
 .bot-hero::after { content: "OKTA-BOT"; position: absolute; right: -2vw; bottom: -4vw; color: rgba(151,70,21,.07); font-size: clamp(5rem, 13vw, 13rem); font-weight: 900; pointer-events: none; }
 .bot-hero .left { position: relative; z-index: 1; }
-.bot-hero-layout { max-width: 1280px; flex-direction: row; justify-content: space-between; gap: clamp(24px, 5vw, 80px); }
+.bot-hero-layout { max-width: var(--product-content-width); padding-right: var(--product-content-gutter); padding-left: var(--product-content-gutter); flex-direction: row; justify-content: space-between; gap: clamp(24px, 5vw, 80px); }
 .hero-text { flex: 0 1 52%; text-align: left; }
 .hero-product-image { width: min(46%, 520px) !important; max-height: 540px; object-fit: contain; filter: drop-shadow(0 24px 28px rgba(71, 22, 0, .28)); }
 .bot-hero .txt01 { color: #bd4d0b; font-size: clamp(1.35rem, 2vw, 2rem); }
@@ -29,7 +29,7 @@ body { color: #242424; background: #fffaf6; }
 .hero-subcopy { max-width: 640px; margin-top: 14px; font-size: 1rem; line-height: 1.75; }
 .bot-hero .btn { border: 1px solid rgba(255,255,255,.3); }
 
-.bot-intro, .models-section, .rental-section, .brochure-section { max-width: 1180px; margin: 0 auto; padding: 90px 24px; }
+.bot-intro, .models-section, .rental-section, .brochure-section { max-width: var(--product-content-width); margin: 0 auto; padding: 90px var(--product-content-gutter); }
 .eyebrow { color: #ef650b; font-weight: 800; letter-spacing: .12em; }
 .bot-intro h2, .section-heading h2, .rental-section h2 { margin-top: 10px; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.25; }
 .bot-intro > p:last-of-type, .rental-section p { margin-top: 20px; color: #555; font-size: 1.1rem; line-height: 1.8; }
@@ -39,7 +39,7 @@ body { color: #242424; background: #fffaf6; }
 .benefit-grid strong { color: #e65f08; font-size: 1.25rem; }
 .benefit-grid span { margin-top: 10px; color: #666; }
 
-.models-section { max-width: 1320px; background: #fff; }
+.models-section { background: #fff; }
 .section-heading { margin-bottom: 36px; text-align: center; }
 .model-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 .model-card { padding: 30px; border: 1px solid #f0d7c7; border-radius: 18px; background: linear-gradient(145deg, #fff, #fff8f2); box-shadow: 0 12px 35px rgba(105,50,7,.08); }
@@ -55,7 +55,7 @@ body { color: #242424; background: #fffaf6; }
 .model-card dd { margin: 0; font-weight: 700; text-align: right; }
 .price-note { margin-top: 24px; color: #777; font-size: .9rem; text-align: center; }
 
-.rental-section { display: flex; align-items: center; justify-content: space-between; gap: 50px; max-width: none; padding-right: max(24px, calc((100% - 1180px)/2)); padding-left: max(24px, calc((100% - 1180px)/2)); color: #fff; background: #113e2c; }
+.rental-section { display: flex; align-items: center; justify-content: space-between; gap: 50px; max-width: none; padding-right: max(var(--product-content-gutter), calc((100% - var(--product-content-width)) / 2 + var(--product-content-gutter))); padding-left: max(var(--product-content-gutter), calc((100% - var(--product-content-width)) / 2 + var(--product-content-gutter))); color: #fff; background: #113e2c; }
 .rental-section .eyebrow { color: #9ee572; }
 .rental-section p { max-width: 760px; color: #d8e7df; }
 .rental-section .btn { width: 280px; flex: 0 0 auto; }

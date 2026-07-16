@@ -30,7 +30,7 @@ header { position: relative; z-index: 20; }
 .content {
   position: relative;
   min-height: 70vh;
-  padding: 120px max(24px, 8vw) 34px;
+  padding: 120px 0 34px;
   color: #fff;
   background-image: linear-gradient(90deg, rgba(7,18,34,.72), rgba(7,18,34,.18)), var(--product-hero);
   background-position: center;
@@ -38,7 +38,7 @@ header { position: relative; z-index: 20; }
   isolation: isolate;
 }
 .content::after { content: ""; position: absolute; inset: auto 0 0; z-index: -1; height: 42%; background: linear-gradient(transparent, rgba(5,13,24,.28)); }
-.left { display: grid; grid-template-columns: minmax(240px, .8fr) minmax(360px, 1.2fr); align-items: center; gap: clamp(28px, 5vw, 76px); max-width: 1120px; text-align: left; }
+.left { display: grid; grid-template-columns: minmax(240px, .8fr) minmax(360px, 1.2fr); align-items: center; gap: clamp(28px, 5vw, 76px); max-width: var(--product-content-width); padding-right: var(--product-content-gutter); padding-left: var(--product-content-gutter); text-align: left; }
 .hero-text-group { min-width: 0; }
 .left .txt01 { color: rgba(255,255,255,.72); font-size: clamp(1rem, 1.5vw, 1.35rem); font-weight: 750; letter-spacing: .1em; text-transform: uppercase; }
 .left .txt02 { margin-top: 8px; color: #fff; font-size: clamp(2.5rem, 4.5vw, 4.5rem); line-height: 1.08; letter-spacing: -.045em; text-shadow: 0 4px 24px rgba(0,0,0,.24); }
@@ -46,7 +46,7 @@ header { position: relative; z-index: 20; }
 .left > img:hover { transform: translateY(-4px); }
 hr { display: none; }
 
-.item { align-items: flex-start; gap: 24px; max-width: 1280px; padding: 52px 24px 90px; }
+.item { align-items: flex-start; gap: 24px; max-width: var(--product-content-width); padding: 52px var(--product-content-gutter) 90px; }
 .item-left { width: auto; min-width: 0; flex: 1 1 auto; }
 .con { overflow: hidden; margin-bottom: 24px; border: 1px solid var(--refresh-line); border-radius: 18px; background: #fff; box-shadow: 0 12px 34px rgba(25,45,68,.07); }
 .con-txt01 { margin: 0; padding: 18px 24px; color: #fff; border-radius: 0; background: var(--product-section-bg); font-size: clamp(1.2rem, 2vw, 1.7rem); }
@@ -72,7 +72,7 @@ hr { display: none; }
 @media (max-width: 1024px) {
   .header { height: 72px; padding: 0 20px; }
   .logo01 { width: 100%; }
-  .content { min-height: 68vh; padding: 112px 7% 42px; }
+  .content { min-height: 68vh; padding: 112px 0 42px; }
   .left { display: flex; max-width: 760px; text-align: center; }
   .left > img { width: auto; max-height: 34vh; margin-top: 14px; }
   .item { max-width: 760px; padding: 30px 14px 64px; }

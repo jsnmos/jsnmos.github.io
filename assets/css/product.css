@@ -11,6 +11,8 @@
 --product-logo-width: 45%;
 --product-title-size: 1.6rem;
 --product-side-title-size: 1.6rem;
+--product-content-width: 1280px;
+--product-content-gutter: 24px;
 }
 
 * {
@@ -146,7 +148,7 @@ transform: translateX(5px);
 .item {
 display: flex;
 justify-content: space-between;
-max-width: 1180px;
+max-width: var(--product-content-width);
 margin: 0 auto;
 position: relative;
 }
