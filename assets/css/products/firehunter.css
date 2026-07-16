@@ -1,4 +1,5 @@
 :root {
+  --product-hero: url("https://oktarnd.kr/img/firehunter/main01.png");
   --product-logo-width: 40%;
   --product-menu-accent: #ff5d23;
   --product-menu-hover: #ff6f3a;
