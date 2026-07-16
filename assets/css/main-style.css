@@ -52,7 +52,7 @@ body{
 .showcase{
   flex:1;
   display:grid;
-  grid-template-columns:repeat(3, minmax(0, 1fr));
+  grid-template-columns:repeat(5, minmax(0, 1fr));
   gap:22px;
   padding:28px 40px 40px;
 }
@@ -67,10 +67,12 @@ body{
 
   text-decoration:none;
   color:#111;
-  min-height:520px;
+  min-height:clamp(280px, calc(100vh - 270px), 520px);
 
   box-shadow:0 12px 28px rgba(0,0,0,0.35);
-  transition:transform .25s ease, box-shadow .25s ease;
+  transform:translateZ(0);
+  transition:transform .3s cubic-bezier(.2, .8, .2, 1);
+  will-change:transform;
 
   display:flex;
   align-items:center;
@@ -82,13 +84,16 @@ body{
   width:100%;
   height:auto;
   display:block;
-  transition: transform .35s ease;
+  transform:translateZ(0);
+  transition:transform .3s cubic-bezier(.2, .8, .2, 1);
+  backface-visibility:hidden;
+  will-change:transform;
 }
 
 
 /* 카드에 마우스 올리면 이미지 확대 */
 .panel:hover img{
-  transform: scale(1.06);
+  transform:scale3d(1.04, 1.04, 1);
 }
 
 /* ===== 하단 텍스트 그라데이션 ===== */
@@ -132,24 +137,13 @@ body{
 
 /* ===== 호버 ===== */
 .panel:hover{
-  transform:translateY(-6px);
-  box-shadow:
-    0 20px 40px rgba(0,0,0,0.45),
-    0 0 0 1px rgba(255,255,255,0.08);
+  transform:translate3d(0, -6px, 0);
 }
 
 .panel:focus-visible,
 .logo:focus-visible {
   outline: 3px solid #ffbf47;
   outline-offset: 3px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    scroll-behavior: auto !important;
-    transition-duration: .01ms !important;
-    animation-duration: .01ms !important;
-  }
 }
 
 /* ===== 푸터  ===== */
