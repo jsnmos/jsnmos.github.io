@@ -6,6 +6,15 @@
 
     if (!popupLayer || !popupGrid) return;
 
+    document.querySelectorAll("a[href]").forEach((link) => {
+      const url = new URL(link.href, window.location.href);
+      const isDifferentPage = url.origin !== window.location.origin || url.pathname !== window.location.pathname;
+      if (isDifferentPage && !link.hasAttribute("target")) {
+        link.target = "_blank";
+      }
+      if (link.target === "_blank") link.rel = "noopener noreferrer";
+    });
+
     document.querySelectorAll('a[target="_blank"]').forEach((link) => {
       link.rel = "noopener noreferrer";
     });
