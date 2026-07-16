@@ -19,6 +19,9 @@ body { color: #242424; background: #fffaf6; }
 .bot-hero { color: #fff; position: relative; overflow: hidden; }
 .bot-hero::after { content: "OKTA-BOT"; position: absolute; right: -2vw; bottom: -4vw; color: rgba(255,255,255,.08); font-size: clamp(5rem, 13vw, 13rem); font-weight: 900; pointer-events: none; }
 .bot-hero .left { position: relative; z-index: 1; }
+.bot-hero-layout { max-width: 1280px; flex-direction: row; justify-content: space-between; gap: clamp(24px, 5vw, 80px); }
+.hero-text { flex: 0 1 52%; text-align: left; }
+.hero-product-image { width: min(46%, 520px) !important; max-height: 540px; object-fit: contain; filter: drop-shadow(0 24px 28px rgba(71, 22, 0, .28)); }
 .bot-hero .txt02 { font-size: clamp(3.2rem, 6vw, 6rem); line-height: 1; }
 .bot-hero .txt02 span { display: block; margin-top: 14px; font-size: .38em; letter-spacing: .18em; }
 .hero-copy { margin-top: 30px; font-size: clamp(1.5rem, 2.5vw, 2.5rem); font-weight: 700; }
@@ -42,6 +45,7 @@ body { color: #242424; background: #fffaf6; }
 .model-tag { display: inline-block; padding: 6px 12px; border-radius: 999px; color: #fff; background: #f36b0a; font-size: .85rem; font-weight: 700; }
 .model-card h3 { margin-top: 18px; font-size: 2rem; }
 .model-card h3 em { color: #f36b0a; font-style: normal; }
+.model-image { display: block; width: 100%; height: 240px; margin: 16px 0 8px; object-fit: contain; mix-blend-mode: multiply; }
 .model-summary { min-height: 54px; margin-top: 14px; color: #444; line-height: 1.7; }
 .recommended { margin-top: 16px; color: #1762a7; font-weight: 700; }
 .model-card dl { display: grid; grid-template-columns: repeat(2, 1fr); margin-top: 22px; border-top: 1px solid #eadbd1; border-left: 1px solid #eadbd1; }
@@ -59,6 +63,9 @@ body { color: #242424; background: #fffaf6; }
 @media (max-width: 1024px) {
   .bot-hero { min-height: 720px; }
   .bot-hero .left { justify-content: center; }
+  .bot-hero-layout { flex-direction: column; gap: 24px; }
+  .hero-text { flex: none; text-align: center; }
+  .hero-product-image { width: min(90%, 520px) !important; max-height: 330px; }
   .bot-hero .txt02 { font-size: clamp(3rem, 12vw, 5rem); }
   .hero-subcopy { margin-right: auto; margin-left: auto; }
   .benefit-grid { grid-template-columns: 1fr; }
@@ -72,4 +79,5 @@ body { color: #242424; background: #fffaf6; }
   .model-card { padding: 22px 16px; }
   .model-card dl { grid-template-columns: 1fr; }
   .model-summary { min-height: 0; }
+  .model-image { height: 190px; }
 }
