@@ -21,6 +21,7 @@ npx serve .
 - `wildfires.html`: 산불 및 국가유산 보호 시스템
 - `fabric.html`: OK 소화포
 - `liquid.html`: OK 방염액
+- `okta-bot.html`: 원격제어 잔디깎이 로봇 OKTA-BOT
 - `popup.html`: 견적 문의 폼
 
 이미지와 영상은 `img/`, 스타일은 `assets/css/`, 스크립트는 `assets/js/`에서 관리합니다.

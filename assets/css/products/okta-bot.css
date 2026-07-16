@@ -1,0 +1,75 @@
+:root {
+  --product-hero: linear-gradient(120deg, #ff7a00 0%, #ef4f00 55%, #9d2400 100%);
+  --product-hero-height: 650px;
+  --product-logo-width: 34%;
+  --product-menu-accent: #ffb25f;
+  --product-menu-hover: #ffd4a3;
+  --product-accent: #f36b0a;
+  --product-accent-soft: #cf4b00d9;
+  --product-side-accent: #f36b0a;
+  --product-section-bg: #f36b0a;
+  --product-section-color: #d65300;
+}
+
+body { color: #242424; background: #fffaf6; }
+.header { z-index: 3; }
+.logo01 { color: #fff; }
+.menu01 { gap: 3%; }
+.menu01 a { font-size: 1rem; white-space: nowrap; }
+.bot-hero { color: #fff; position: relative; overflow: hidden; }
+.bot-hero::after { content: "OKTA-BOT"; position: absolute; right: -2vw; bottom: -4vw; color: rgba(255,255,255,.08); font-size: clamp(5rem, 13vw, 13rem); font-weight: 900; pointer-events: none; }
+.bot-hero .left { position: relative; z-index: 1; }
+.bot-hero .txt02 { font-size: clamp(3.2rem, 6vw, 6rem); line-height: 1; }
+.bot-hero .txt02 span { display: block; margin-top: 14px; font-size: .38em; letter-spacing: .18em; }
+.hero-copy { margin-top: 30px; font-size: clamp(1.5rem, 2.5vw, 2.5rem); font-weight: 700; }
+.hero-subcopy { max-width: 640px; margin-top: 16px; font-size: 1.1rem; line-height: 1.8; }
+.bot-hero .btn { border: 1px solid rgba(255,255,255,.3); }
+
+.bot-intro, .models-section, .rental-section, .brochure-section { max-width: 1180px; margin: 0 auto; padding: 90px 24px; }
+.eyebrow { color: #ef650b; font-weight: 800; letter-spacing: .12em; }
+.bot-intro h2, .section-heading h2, .rental-section h2 { margin-top: 10px; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.25; }
+.bot-intro > p:last-of-type, .rental-section p { margin-top: 20px; color: #555; font-size: 1.1rem; line-height: 1.8; }
+.benefit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 42px; }
+.benefit-grid article { padding: 28px; border: 1px solid #ffd6b9; border-radius: 16px; background: #fff; box-shadow: 0 10px 28px rgba(93,42,0,.07); }
+.benefit-grid strong, .benefit-grid span { display: block; }
+.benefit-grid strong { color: #e65f08; font-size: 1.25rem; }
+.benefit-grid span { margin-top: 10px; color: #666; }
+
+.models-section { max-width: 1320px; background: #fff; }
+.section-heading { margin-bottom: 36px; text-align: center; }
+.model-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.model-card { padding: 30px; border: 1px solid #f0d7c7; border-radius: 18px; background: linear-gradient(145deg, #fff, #fff8f2); box-shadow: 0 12px 35px rgba(105,50,7,.08); }
+.model-tag { display: inline-block; padding: 6px 12px; border-radius: 999px; color: #fff; background: #f36b0a; font-size: .85rem; font-weight: 700; }
+.model-card h3 { margin-top: 18px; font-size: 2rem; }
+.model-card h3 em { color: #f36b0a; font-style: normal; }
+.model-summary { min-height: 54px; margin-top: 14px; color: #444; line-height: 1.7; }
+.recommended { margin-top: 16px; color: #1762a7; font-weight: 700; }
+.model-card dl { display: grid; grid-template-columns: repeat(2, 1fr); margin-top: 22px; border-top: 1px solid #eadbd1; border-left: 1px solid #eadbd1; }
+.model-card dl div { display: flex; justify-content: space-between; gap: 12px; padding: 10px 12px; border-right: 1px solid #eadbd1; border-bottom: 1px solid #eadbd1; }
+.model-card dt { color: #777; }
+.model-card dd { margin: 0; font-weight: 700; text-align: right; }
+.price-note { margin-top: 24px; color: #777; font-size: .9rem; text-align: center; }
+
+.rental-section { display: flex; align-items: center; justify-content: space-between; gap: 50px; max-width: none; padding-right: max(24px, calc((100% - 1180px)/2)); padding-left: max(24px, calc((100% - 1180px)/2)); color: #fff; background: #113e2c; }
+.rental-section .eyebrow { color: #9ee572; }
+.rental-section p { max-width: 760px; color: #d8e7df; }
+.rental-section .btn { width: 280px; flex: 0 0 auto; }
+.brochure-section img { display: block; width: 100%; margin-top: 24px; border-radius: 12px; box-shadow: 0 14px 40px rgba(0,0,0,.12); }
+
+@media (max-width: 1024px) {
+  .bot-hero { min-height: 720px; }
+  .bot-hero .left { justify-content: center; }
+  .bot-hero .txt02 { font-size: clamp(3rem, 12vw, 5rem); }
+  .hero-subcopy { margin-right: auto; margin-left: auto; }
+  .benefit-grid { grid-template-columns: 1fr; }
+  .model-grid { grid-template-columns: 1fr; }
+  .rental-section { flex-direction: column; align-items: flex-start; }
+  .rental-section .btn { width: min(100%, 320px); }
+}
+
+@media (max-width: 600px) {
+  .bot-intro, .models-section, .rental-section, .brochure-section { padding: 64px 16px; }
+  .model-card { padding: 22px 16px; }
+  .model-card dl { grid-template-columns: 1fr; }
+  .model-summary { min-height: 0; }
+}
