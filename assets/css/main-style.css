@@ -4,7 +4,7 @@
   --line: #dfe5ec;
   --orange: #f26622;
   --paper: #f3f6f8;
-  --page-gutter: clamp(24px, 7.5vw, 140px);
+  --page-gutter: clamp(24px, 8vw, 160px);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
