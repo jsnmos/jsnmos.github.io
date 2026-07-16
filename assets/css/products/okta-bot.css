@@ -22,10 +22,11 @@ body { color: #242424; background: #fffaf6; }
 .bot-hero-layout { max-width: 1280px; flex-direction: row; justify-content: space-between; gap: clamp(24px, 5vw, 80px); }
 .hero-text { flex: 0 1 52%; text-align: left; }
 .hero-product-image { width: min(46%, 520px) !important; max-height: 540px; object-fit: contain; filter: drop-shadow(0 24px 28px rgba(71, 22, 0, .28)); }
-.bot-hero .txt02 { font-size: clamp(3.2rem, 6vw, 6rem); line-height: 1; }
+.bot-hero .txt01 { font-size: clamp(1.35rem, 2vw, 2rem); }
+.bot-hero .txt02 { font-size: clamp(2.8rem, 5vw, 5rem); line-height: 1; }
 .bot-hero .txt02 span { display: block; margin-top: 14px; font-size: .38em; letter-spacing: .18em; }
-.hero-copy { margin-top: 30px; font-size: clamp(1.5rem, 2.5vw, 2.5rem); font-weight: 700; }
-.hero-subcopy { max-width: 640px; margin-top: 16px; font-size: 1.1rem; line-height: 1.8; }
+.hero-copy { margin-top: 26px; font-size: clamp(1.25rem, 2vw, 2rem); font-weight: 700; }
+.hero-subcopy { max-width: 640px; margin-top: 14px; font-size: 1rem; line-height: 1.75; }
 .bot-hero .btn { border: 1px solid rgba(255,255,255,.3); }
 
 .bot-intro, .models-section, .rental-section, .brochure-section { max-width: 1180px; margin: 0 auto; padding: 90px 24px; }

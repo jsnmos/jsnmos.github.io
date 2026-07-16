@@ -43,3 +43,5 @@ npx serve .
 공개 HTML 파일은 기존 URL을 유지하기 위해 루트에 둡니다. 새 정적 리소스는 역할에 따라 `assets/css` 또는 `assets/js`에 추가합니다.
 
 제품 페이지는 공통 `assets/css/product.css`와 `assets/css/products/` 아래의 제품별 테마를 함께 사용합니다. Fabric과 Liquid는 의도적으로 같은 `products/fabric.css`를 공유합니다.
+
+2026-07-16 이전 메인 디자인은 `index_060716.html`과 `_060716` 접미사가 붙은 CSS·JavaScript 파일로 보관합니다.

@@ -98,6 +98,17 @@ margin: 0 auto;
 transform: translate(5px, -5px);
 }
 
+@media (min-width: 1025px) {
+body .content {
+min-height: 70vh;
+padding: 130px 10% 3%;
+}
+body .content .left > img {
+max-height: 40vh;
+object-fit: contain;
+}
+}
+
 .txt01{font-size: 2.5rem;font-weight: 500;}
 .txt02{font-size: 2.7rem;font-weight: 600;padding-bottom:20px}
 
