@@ -12,10 +12,16 @@
 }
 
 body { color: #242424; background: #fffaf6; }
-.header { z-index: 3; }
-.logo01 { color: #3b2418; }
-.menu01 { gap: 3%; }
-.menu01 a { color: #4b2a1a; font-size: 1rem; white-space: nowrap; }
+header { position: relative; z-index: 20; }
+.header { position: absolute; inset: 0 0 auto; z-index: 20; height: 84px; padding: 0 clamp(24px, 4vw, 64px); border-bottom: 1px solid rgba(255,255,255,.18); background: rgba(10,20,34,.66); backdrop-filter: blur(14px); }
+.logo01 { width: min(28%, 290px); gap: 12px; color: #fff; }
+.logo01 img { max-width: 122px; }
+.logo01 p { padding-left: 12px; border-left: 1px solid rgba(255,255,255,.24); font-size: .86rem; font-weight: 700; white-space: nowrap; }
+.menu01 { justify-content: flex-end; gap: clamp(12px, 2.2vw, 34px); }
+.menu01 a { position: relative; color: rgba(255,255,255,.78); font-size: clamp(.76rem, .95vw, .96rem); white-space: nowrap; }
+.menu01 a:first-child { color: var(--product-menu-accent); }
+.menu01 a::after { content: ""; position: absolute; right: 0; bottom: -10px; left: 0; height: 2px; background: currentColor; transform: scaleX(0); transition: transform .25s ease; }
+.menu01 a:hover::after, .menu01 a:first-child::after { transform: scaleX(1); }
 .bot-hero { color: #3b2418; position: relative; overflow: hidden; padding-right: 0; padding-left: 0; }
 .bot-hero::after { content: "OKTA-BOT"; position: absolute; right: -2vw; bottom: -4vw; color: rgba(151,70,21,.07); font-size: clamp(5rem, 13vw, 13rem); font-weight: 900; pointer-events: none; }
 .bot-hero .left { position: relative; z-index: 1; }
@@ -62,6 +68,8 @@ body { color: #242424; background: #fffaf6; }
 .brochure-section img { display: block; width: 100%; margin-top: 24px; border-radius: 12px; box-shadow: 0 14px 40px rgba(0,0,0,.12); }
 
 @media (max-width: 1024px) {
+  .header { height: 72px; padding: 0 20px; }
+  .logo01 { width: 100%; }
   .bot-hero { min-height: 720px; }
   .bot-hero .left { justify-content: center; }
   .bot-hero-layout { flex-direction: column; gap: 24px; }
