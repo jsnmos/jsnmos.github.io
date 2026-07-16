@@ -52,7 +52,7 @@ body{
 .showcase{
   flex:1;
   display:grid;
-  grid-template-columns:repeat(5, 1fr);
+  grid-template-columns:repeat(3, minmax(0, 1fr));
   gap:22px;
   padding:28px 40px 40px;
 }
@@ -136,6 +136,20 @@ body{
   box-shadow:
     0 20px 40px rgba(0,0,0,0.45),
     0 0 0 1px rgba(255,255,255,0.08);
+}
+
+.panel:focus-visible,
+.logo:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
 }
 
 /* ===== 푸터  ===== */

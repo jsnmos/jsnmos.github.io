@@ -1,0 +1,32 @@
+:root {
+  --product-hero: url("https://oktarnd.kr/img/wildfires/w-main01.png");
+  --product-hero-height: 650px;
+  --product-logo-width: 40%;
+  --product-menu-accent: #ff5d23;
+  --product-menu-hover: #ff6f3a;
+  --product-accent: #d13800e1;
+  --product-accent-soft: #d13800b2;
+  --product-side-accent: #6a1affb5;
+  --product-section-bg: #c74b1dd5;
+  --product-section-color: #b8532e;
+  --product-side-title-size: 1.7rem;
+}
+
+.left img { width: auto; }
+.con-txt03 { font-size: 1.1rem; }
+.video01 { padding: 0 10px; display: flex; justify-content: center; gap: 2%; margin-bottom: 10px; height: 300px; }
+.video01 video { width: 64%; }
+.video01 img { width: 27%; object-fit: cover; }
+.spec-table { max-width: 100%; padding: 2% 3%; }
+.spec-table th { width: auto; }
+.center { text-align: center; }
+
+@media (max-width: 1024px) {
+  .txt01 { font-size: 2rem; }
+  .txt02 { font-size: 2.2rem; }
+  .left { justify-content: initial; }
+  .left img { width: 60%; }
+  .video01 { margin-bottom: 10px; height: auto; flex-direction: column; align-items: center; }
+  .video01 video { width: 100%; }
+  .video01 img { width: 60%; padding: 10px 0; }
+}

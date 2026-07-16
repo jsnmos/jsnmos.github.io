@@ -1,0 +1,15 @@
+:root {
+  --product-hero: url("https://oktarnd.kr/img/robot/r-main06.png");
+  --product-hero-height: 650px;
+  --product-logo-width: 40%;
+  --product-title-size: 1.8rem;
+  --product-side-title-size: 1.7rem;
+}
+
+.spec-table { max-width: 100%; padding: 2%; }
+
+@media (max-width: 1024px) {
+  .txt01 { font-size: 2rem; }
+  .txt02 { font-size: 2.2rem; }
+  .left { justify-content: initial; }
+}

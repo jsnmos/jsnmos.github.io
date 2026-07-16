@@ -6,6 +6,16 @@
 
     if (!popupLayer || !popupGrid) return;
 
+    document.querySelectorAll('a[target="_blank"]').forEach((link) => {
+      link.rel = "noopener noreferrer";
+    });
+    document.querySelectorAll("img").forEach((image, index) => {
+      image.loading = index < 3 ? "eager" : "lazy";
+      image.decoding = "async";
+    });
+
+    let previouslyFocusedElement = null;
+
     const getPopupCards = () => Array.from(popupGrid.querySelectorAll(".popup-card"));
 
     function setCookie(name, value, days) {
@@ -27,7 +37,7 @@
       });
 
       if (cards.length === 0) {
-        popupLayer.style.display = "none";
+        closePopupLayer();
         return;
       }
 
@@ -37,14 +47,19 @@
     }
 
     function openPopupLayer() {
+      previouslyFocusedElement = document.activeElement;
       popupLayer.style.display = "block";
+      popupLayer.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
       updatePopupLayout();
+      popupLayer.querySelector("button")?.focus();
     }
 
     function closePopupLayer() {
       popupLayer.style.display = "none";
+      popupLayer.setAttribute("aria-hidden", "true");
       document.body.style.overflow = "";
+      previouslyFocusedElement?.focus();
     }
 
     // 오늘 하루 보지 않기 쿠키가 없을 때만 열기
@@ -68,6 +83,24 @@
       if (todayButton) {
         setCookie(hideCookieName, "Y", 1);
         closePopupLayer();
+      }
+    });
+
+    popupLayer.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closePopupLayer();
+
+      if (event.key === "Tab") {
+        const focusable = Array.from(popupLayer.querySelectorAll("button, a[href]"));
+        if (!focusable.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
       }
     });
   });

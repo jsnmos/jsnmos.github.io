@@ -2,10 +2,12 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
 <title>견적 문의하기</title>
-<link rel="stylesheet" href="https://oktarnd.kr/res/p-style.css">
+<link rel="stylesheet" href="https://oktarnd.kr/assets/css/p-style.css">
 <link rel="shortcut icon" href="https://oktarnd.kr/favicon.ico" />
-<script src="https://oktarnd.kr/res/p-script.js" defer></script>
+<script src="https://oktarnd.kr/assets/js/p-script.js" defer></script>
 <!-- EmailJS SDK -->
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -25,13 +27,13 @@
   <h2>견적 문의 신청 정보 입력 <span class="required">*</span></h2>
 
   <form id="estimateForm">
-    <label>소속명 <span class="required">*</span></label>
-    <input type="text" id="organization" required>
+    <label for="organization">소속명 <span class="required">*</span></label>
+    <input type="text" id="organization" name="organization" autocomplete="organization" required>
 
-    <label>이름 <span class="required">*</span></label>
-    <input type="text" id="name" required>
+    <label for="name">이름 <span class="required">*</span></label>
+    <input type="text" id="name" name="name" autocomplete="name" required>
 
-    <label>연락처 <span class="required">*</span></label>
+    <label for="phone1">연락처 <span class="required">*</span></label>
     <div class="phone-wrap">
       <select id="phone1" required>
         <option value="010" selected>010</option>
@@ -42,18 +44,18 @@
         <option value="019">019</option>
       </select>
 
-      <input type="text" id="phone2" maxlength="4" required placeholder="0000">
-      <input type="text" id="phone3" maxlength="4" required placeholder="0000">
+      <input type="text" id="phone2" inputmode="numeric" maxlength="4" required placeholder="0000" aria-label="전화번호 가운데 자리">
+      <input type="text" id="phone3" inputmode="numeric" maxlength="4" required placeholder="0000" aria-label="전화번호 마지막 자리">
     </div>
 
-    <label>이메일 <span class="required">*</span></label>
-    <input type="email" id="email" required>
+    <label for="email">이메일 <span class="required">*</span></label>
+    <input type="email" id="email" name="email" autocomplete="email" required>
 
-    <label>국가</label>
-    <input type="text" id="country">
+    <label for="country">국가</label>
+    <input type="text" id="country" name="country" autocomplete="country-name">
 
-    <label>문의내용 <span class="required">*</span></label>
-    <textarea id="message" required></textarea>
+    <label for="message">문의내용 <span class="required">*</span></label>
+    <textarea id="message" name="message" required></textarea>
 
     <div class="agree-box">
       <input type="checkbox" id="agree" required>
@@ -79,7 +81,7 @@
     </div>
 
 
-    <div id="resultMsg" class="result-msg"></div>
+    <div id="resultMsg" class="result-msg" role="status" aria-live="polite"></div>
   </form>
 </div>
 

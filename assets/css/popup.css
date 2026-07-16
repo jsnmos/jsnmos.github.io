@@ -70,6 +70,12 @@
   opacity: 0.9;
 }
 
+.popup-btn:focus-visible,
+.popup-card__link:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
+}
+
 /* 링크 */
 .popup-card__link {
   display: block;

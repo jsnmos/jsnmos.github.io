@@ -1,0 +1,41 @@
+:root {
+  --product-logo-width: 40%;
+  --product-menu-accent: #ff5d23;
+  --product-menu-hover: #ff6f3a;
+  --product-accent: #d13800c7;
+  --product-accent-soft: #d138008a;
+  --product-side-accent: #6a1affb5;
+  --product-title-size: 2rem;
+  --product-side-title-size: 2rem;
+}
+
+body { background: url("https://oktarnd.kr/img/firehunter/main01.png") center/cover fixed no-repeat; }
+.header { position: static; width: auto; }
+.inner-con { max-width: 1180px; }
+.content { min-height: 650px; width: auto; padding: 0; background: none; }
+.txt01 { font-weight: 400; }
+.txt02 { font-weight: 500; }
+.item-right { background: rgba(0, 0, 0, .5); }
+.con-txt01 { padding: 20px; background: none; border-radius: 0; }
+.con-txt02 { color: inherit; font-size: 1.2rem; font-weight: 400; padding: 10px 20px; }
+.con-txt03 { color: inherit; font-size: inherit; padding: 0; }
+.con { border: 0; border-radius: 0; word-break: normal; }
+.footer { background: rgba(0, 0, 0, .4); }
+.spec-table th,
+.spec-table td { color: inherit; border-color: #e5e5e5; }
+.spec-table th { background: rgba(4, 12, 53, .5); }
+.spec-table td { background: rgba(0, 0, 0, .5); }
+
+@media (max-width: 1024px) {
+  body { background: none; }
+  .header { position: absolute; width: 100%; }
+  .content {
+    background: url("https://oktarnd.kr/img/firehunter/main01.png") center/cover no-repeat;
+    padding: 135px 10% 10%;
+  }
+  .txt01 { font-size: 2rem; font-weight: 500; }
+  .txt02 { font-size: 2.2rem; font-weight: 600; }
+  .left { justify-content: initial; }
+  .con-txt01 { color: #333; padding: 10px; }
+  .con-txt02 { color: #333; font-size: .8rem; padding: 5px 15px; }
+}

@@ -7,7 +7,7 @@
   }
 
   .popup-container {
-    width: 420px;
+    width: min(420px, calc(100% - 24px));
     background: white;
     margin: 20px auto;
     padding: 25px;
@@ -115,6 +115,16 @@
 
   .submit-btn:disabled {
     background: #b5b5b5;
+  }
+
+  :focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 480px) {
+    .popup-container { margin: 12px auto; padding: 18px; }
+    .g-recaptcha { transform: scale(.88); transform-origin: left top; }
   }
 
   .submit-btn.close {

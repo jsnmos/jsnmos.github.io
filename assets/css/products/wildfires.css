@@ -1,0 +1,17 @@
+:root {
+  --product-hero: url("https://oktarnd.kr/img/wildfires/w-main01.png");
+  --product-hero-height: 650px;
+  --product-logo-width: 40%;
+  --product-menu-accent: #ff5d23;
+  --product-menu-hover: #ff6f3a;
+  --product-accent: #d13800e1;
+  --product-accent-soft: #d13800b2;
+  --product-side-accent: #6a1affb5;
+  --product-section-bg: #c74b1dd5;
+  --product-section-color: #b8532e;
+  --product-side-title-size: 1.35rem;
+}
+
+@media (max-width: 1024px) {
+  .left { justify-content: initial; }
+}

@@ -22,9 +22,6 @@ viewBtn.addEventListener("click", () => {
   }
 });
 
-// EmailJS 초기화
-emailjs.init("FMS-nexppzBEa8dEo"); // ★ Public Key
-
 document.getElementById("estimateForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -86,11 +83,13 @@ document.getElementById("estimateForm").addEventListener("submit", function(e) {
   emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
     .then(function() {
       const result = document.getElementById("resultMsg");
+      result.classList.remove("error");
       result.textContent = "성공적으로 접수되었습니다. 빠르게 연락드리겠습니다.";
       result.classList.add("success");
       result.style.display = "block";
 
       document.getElementById("estimateForm").reset();
+      grecaptcha.reset();
       submitBtn.disabled = false;
       submitBtn.textContent = "제출";
 
@@ -99,6 +98,7 @@ document.getElementById("estimateForm").addEventListener("submit", function(e) {
     })
     .catch(function(error) {
       const result = document.getElementById("resultMsg");
+      result.classList.remove("success");
       result.textContent = "전송 중 오류가 발생했습니다. 다시 시도해주세요.";
       result.classList.add("error");
       result.style.display = "block";
