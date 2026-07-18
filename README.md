@@ -19,7 +19,7 @@ npx serve .
 - `mobility.html`: Physical AI Mobility 4족 로봇
 - `firehunter.html`: K-Fire Hunters
 - `wildfires.html`: 산불 및 국가유산 보호 시스템
-- `fabric.html`: OKTA-TC250
+- `fabric.html`: 방화포 OKTA-TC250
 - `liquid.html`: OK 방염액
 - `okta-bot.html`: 원격제어 잔디깎이 로봇 OKTA-BOT
 - `popup.html`: 견적 문의 폼

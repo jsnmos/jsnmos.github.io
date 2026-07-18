@@ -67,7 +67,7 @@ align-items: center;
     font-weight: 500;
     white-space: nowrap;
 }
-.menu01 a:first-child {
+.menu01 a[aria-current="page"] {
     color: var(--product-menu-accent);
 }
 .menu01 a:hover {

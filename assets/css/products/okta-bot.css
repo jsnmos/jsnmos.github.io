@@ -19,9 +19,9 @@ header { position: relative; z-index: 20; }
 .logo01 p { padding-left: 12px; border-left: 1px solid rgba(255,255,255,.24); font-size: .86rem; font-weight: 700; white-space: nowrap; }
 .menu01 { justify-content: flex-end; gap: clamp(12px, 2.2vw, 34px); }
 .menu01 a { position: relative; color: rgba(255,255,255,.78); font-size: clamp(.76rem, .95vw, .96rem); white-space: nowrap; }
-.menu01 a:first-child { color: var(--product-menu-accent); }
+.menu01 a[aria-current="page"] { color: var(--product-menu-accent); }
 .menu01 a::after { content: ""; position: absolute; right: 0; bottom: -10px; left: 0; height: 2px; background: currentColor; transform: scaleX(0); transition: transform .25s ease; }
-.menu01 a:hover::after, .menu01 a:first-child::after { transform: scaleX(1); }
+.menu01 a:hover::after, .menu01 a[aria-current="page"]::after { transform: scaleX(1); }
 .bot-hero { color: #3b2418; position: relative; overflow: hidden; padding-right: 0; padding-left: 0; }
 .bot-hero::after { content: "OKTA-BOT"; position: absolute; right: -2vw; bottom: -4vw; color: rgba(151,70,21,.07); font-size: clamp(5rem, 13vw, 13rem); font-weight: 900; pointer-events: none; }
 .bot-hero .left { position: relative; z-index: 1; }

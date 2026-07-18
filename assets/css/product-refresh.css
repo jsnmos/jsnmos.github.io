@@ -24,7 +24,7 @@ header { position: relative; z-index: 20; }
 .menu01 { justify-content: flex-end; gap: clamp(12px, 2.2vw, 34px); }
 .menu01 a { position: relative; color: rgba(255,255,255,.78); font-size: clamp(.76rem, .95vw, .96rem); }
 .menu01 a::after { content: ""; position: absolute; right: 0; bottom: -10px; left: 0; height: 2px; background: currentColor; transform: scaleX(0); transition: transform .25s ease; }
-.menu01 a:hover::after, .menu01 a:first-child::after { transform: scaleX(1); }
+.menu01 a:hover::after, .menu01 a[aria-current="page"]::after { transform: scaleX(1); }
 
 .inner-con { width: 100%; max-width: none; }
 .content {

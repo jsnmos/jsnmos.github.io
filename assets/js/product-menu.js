@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = header?.querySelector(".menu01");
   if (!header || !menu) return;
 
+  const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
+  menu.querySelectorAll("a[href]").forEach((link) => {
+    const linkPath = new URL(link.href, window.location.href).pathname.replace(/\/$/, "") || "/";
+    if (linkPath === currentPath) link.setAttribute("aria-current", "page");
+  });
+
   const button = document.createElement("button");
   button.className = "menu-toggle";
   button.type = "button";
