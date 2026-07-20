@@ -5,8 +5,9 @@
   --refresh-paper: #f3f6f8;
 }
 
+html { overflow-x: clip; }
 body { color: var(--refresh-ink); background: var(--refresh-paper); }
-.wrap { overflow: clip; background: var(--refresh-paper); }
+.wrap { overflow: visible; background: var(--refresh-paper); }
 header { position: relative; z-index: 20; }
 .header {
   position: absolute;
