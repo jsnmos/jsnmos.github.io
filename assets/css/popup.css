@@ -43,6 +43,26 @@
   justify-self: center;
 }
 
+/* 이미지 2개를 가로로 나란히 붙인 카드 */
+.popup-card--dual {
+  max-width: min(100%, 1040px);
+}
+
+.popup-card__row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.popup-card--dual .popup-card__link {
+  flex: 1 1 0;
+  width: auto;
+}
+
+.popup-card--dual .popup-card__image {
+  width: 100%;
+}
+
 /* 버튼 영역 */
 .popup-card__actions {
   position: absolute;
@@ -125,6 +145,10 @@
     max-width: 100%;
     height: auto;
     max-height: none;
+  }
+
+  .popup-card__row {
+    flex-direction: column;
   }
 
   .popup-btn {
