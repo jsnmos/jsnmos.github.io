@@ -27,7 +27,8 @@
 .test-report-grid a:hover img { transform: scale(1.015); }
 .test-report-grid figcaption { padding-top: 10px; color: #555; font-size: .95rem; font-weight: 700; text-align: center; }
 .kfi-title { display: flex; align-items: center; gap: 14px; }
-.kfi-title img { width: 40px; height: auto; flex-shrink: 0; }
+.kfi-title img { width: 60px; height: auto; flex-shrink: 0; }
+.kfi-title span { font-size: 1.05rem; font-weight: 600; white-space: nowrap; }
 
 @media (max-width: 1024px) {
   .txt01 { font-size: 2rem; }
@@ -39,5 +40,6 @@
   .video01 img { width: 60%; padding: 10px 0; }
   .test-report-grid { grid-template-columns: 1fr; padding: 14px; }
   .test-report-grid img { width: 100%; }
-  .kfi-title img { width: 32px; }
+  .kfi-title img { width: 44px; }
+  .kfi-title span { font-size: .85rem; white-space: normal; }
 }
