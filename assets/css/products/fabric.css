@@ -26,6 +26,9 @@
 .test-report-grid img { display: block; width: 100%; aspect-ratio: 2479 / 3508; object-fit: cover; object-position: top; transition: transform .25s ease; }
 .test-report-grid a:hover img { transform: scale(1.015); }
 .test-report-grid figcaption { padding-top: 10px; color: #555; font-size: .95rem; font-weight: 700; text-align: center; }
+.kfi-badge { display: flex; align-items: center; gap: 16px; padding: 0 20px 16px; }
+.kfi-badge img { width: 70px; height: auto; flex-shrink: 0; }
+.kfi-badge p { margin: 0; font-size: 1.05rem; font-weight: 700; color: #333; }
 
 @media (max-width: 1024px) {
   .txt01 { font-size: 2rem; }
@@ -37,4 +40,7 @@
   .video01 img { width: 60%; padding: 10px 0; }
   .test-report-grid { grid-template-columns: 1fr; padding: 14px; }
   .test-report-grid img { width: 100%; }
+  .kfi-badge { gap: 12px; padding: 0 14px 14px; }
+  .kfi-badge img { width: 50px; }
+  .kfi-badge p { font-size: .95rem; }
 }
